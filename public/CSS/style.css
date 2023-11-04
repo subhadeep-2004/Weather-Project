@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.heading{
+    display: flex;
+    color: white;
+    justify-content: center;
+    
+}
+
+ body {
+    min-height: 100vh;
+    background-image: url("../img/dummy2.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center;
+   position: relative;
+   text-align: center;
+   background-color: aqua;
+  
+  }  
+#container2{
+    margin-top: 10px;
+    display: flex;
+
+   /* align-items: center;  */
+    justify-content: center;
+}
+.search-btn{
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    outline: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;    
+}
+
+.search-btn:hover{
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.magnify-glass{
+    height: 25px;
+    width: 25px;  
+}
+.search-bar{
+    width: 100%;
+    max-width: 500px;
+    max-height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 20px
+}
+.search-bar:hover{
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+    
+
+}
+/* Changing place-holder text color*/
+::placeholder{
+    color: white;
+}
+
+#container3{
+    /* For centering the container auto increase the left and right margin 
+    until the container is in the center respect to the y axis of the view port */
+    margin: 50px auto;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+   
+}
+
+.descrip{
+   float: right;
+   margin-top: 0px;
+}
+
+p{
+    margin-top: 0;
+    font-size:2rem;
+    margin-left: 10px;
+}
+.details{
+    margin-top: 20px; 
+    list-style-type: none 
+    
+}
+
+.temp{
+    font-size: 3rem;
+  
+}
+.weather-icon {
+    float: right;
+    width: 100px;
+    height:100px;
+    position: right;
+    margin-top: 0px;
+  }
+/* When the details will appear check the main for that search to get the icon */
+
+/* #container4{
+    height: auto;
+    margin: 50px auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    
+   gap: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    
+} */
+
+
+
+
+
+
+
+
+/*  */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px auto;
+  }
+  
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .list-item {
+    max-width: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .value {
+    font-size: 16px;
+  }
+  
+
+
+
+
+  /* .sub-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+ .icon{
+    height: 25px;
+    width: 20px;
+    display: inline-block;
+    margin: 10px;
+} 
+.humidity{
+    list-style-image: url("img/humidity.png");
+}
+.pressure{
+    display: flex;
+}
+.wind{
+    display: flex;
+} */
+
+  
+
+  
+/* .list-item {
+    display: flex;
+    align-items: center;
+} */
+
+
+
+.img-card{
+    width:40px
+} 
+.city{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+
+footer{
+    text-align: end;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/*Updated */
+
+#container4 {
+  height: auto;
+  margin: 50px auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px 20px ;
+}
+/* No need */
+.card1 h2 {
+  padding-right: 0px;
+}
+
+.card-details {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 10px;
+  font-size: 1rem;
+  list-style-type: none;
+  padding: auto;
+  /* flex-wrap: wrap; */
+}
+
+.img-card {
+  width: 40px;
+}
+
+/* No need */
+.card1 {
+  margin-left: 0;
+}
+.card1{
+  margin-left: 0px;
+}
+
+
+
+
+@media(max-width:475px){
+    
+    body{
+         background: url("../img/mobile.jpg");         
+    }
+
+    .search-bar {
+        width: 300px;
+    }
+    .search-btn{
+        width: 0;
+        margin-right: 50px;
+        margin-bottom: 5px;
+    }
+    
+    .magnify-glass{
+    height: 20px;
+    width: 20px;  
+    }
+    .search-bar input{
+        padding: 24px 10px;
+    }
+
+    #container3{
+        width: 50%;
+        
+    }
+    .card1{
+        padding-left: 0;
+    }
+    .weather-icon {
+        
+        width: 100px;
+        height:100px;
+        position: right;
+        margin-top: 0px;
+      }
+
+      #container4{
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+      }
+      .temp{
+        font-size: 2rem;
+      }
+   
+      .card1 h2{
+        padding-right: 0;
+     }
+     .card1{
+        margin-left: 0px;
+    }
+
+      .city{
+        font-size:15px;
+      }
+
+      footer{
+        font-size: 10px;
+      }
+
+
+
+
+    
+      
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+      }
+      
+      .value {
+        font-size: 16px;
+      }
+      
+      .list-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .icon {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      .list {
+        justify-content: center; /* Align list items in the center horizontally */
+        flex-direction: column; /* Arrange list items in a column */
+      }
+    
+      .list-item {
+        width: 100%; /* Make list items take the full width of the container */
+        margin: 10px 0; /* Add some vertical spacing between list items */
+       
+        }
+    }
+
+
+
+
+    /* For the tablet */
+    @media( min-width:476px) and (max-width:1000px){
+
+  
+
+
+
+        #container4{
+           flex-direction: column;
+           width: 50%;
+        }
+        .card1 h2{
+            padding-right: 0;
+         }
+         .card1{
+            margin-left: 0px;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+          }
+          
+          .value {
+            font-size: 16px;
+          }
+          
+          .list-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+        
+          .icon {
+            margin-right: 0;
+            margin-left: 0;
+          }
+    
+          .list {
+            justify-content: center; /* Align list items in the center horizontally */
+            flex-direction: column; /* Arrange list items in a column */
+          }
+        
+          .list-item {
+            width: 100%; /* Make list items take the full width of the container */
+            margin: 10px 0; /* Add some vertical spacing between list items */
+           
+            }
+
+            .city{
+              font-size:20px;
+            }
+      
+
+
+    }
+
+
+
+

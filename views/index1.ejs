@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+
+
+
+
+
+    <div class="heading">
+        <h1 >Weather </h1>
+      </div>
+      <div id="container2">
+  
+      <form action="/search" method="post" class="search-bar">
+        <input type="text" name="location" placeholder="Search" />
+        <button type="submit" class="search-btn"><img class="magnify-glass" src="img/search.png" alt="">
+        </button>
+      </form>
+      </div>
+
+
+
+
+
+    <div id="container3">
+        <img src=<%=img%> alt="Current Weather Icon" class="weather-icon">
+          <h2 class="temp"> <%= temp %>° </h2>
+
+        <p class="city"> <%=city%> </p>
+       
+        <ul class="details">
+  
+          <li><%=descrip%> </li>
+
+          <div class="container">
+            <ul class="list">
+
+              <li class="list-item">
+                <img class="icon" src="img/thermometer.png" alt="">
+                <span class="value">FeelsLike: <%=feels %>° </span>
+              </li>
+
+              <li class="list-item">
+                <img class="icon" src="img/humidity.png" alt="">
+                <span class="value">Humidity: <%=humidity%>% </span>
+              </li>
+              <li class="list-item">
+                <img class="icon" src="img/pressure.png" alt="">
+                <span class="value">Air Pressure: <%=airPressure%>mbar</span>
+              </li>
+              <li class="list-item">
+                <img class="icon" src="/img/wind.png" alt="">
+                <span class="value">Wind Speed: <%=speed%>km/hr</span>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+          
+       
+      </div>
+
+
+
+      <div id="container4">
+
+        <div class="card1">
+          <h2>00:00</h2>
+          <img class="img-card" src=<%=img1%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp1%>° </li>
+            <li> <%=descrip1%> </li>
+            <li> <%=humidity1%>% </li>
+          </ul>
+        </div>
+
+        <div class="card2">
+          <h2>3:00</h2>
+          <img class="img-card" src=<%=img2%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp2%>°</li>
+            <li> <%=descrip2%> </li>
+            <li> <%=humidity2%>% </li>
+          </ul>
+        </div>
+
+        <div class="card3">
+          <h2>6:00</h2>
+          <img class="img-card" src=<%=img3%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp3%>°</li>
+            <li> <%=descrip3%> </li>
+            <li> <%=humidity3%>%</li>
+          </ul>
+        </div>
+
+        <div class="card4">
+          <h2>9:00</h2>
+          <img class="img-card" src=<%=img4%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp4%>°</li>
+            <li> <%=descrip4%> </li>
+            <li> <%=humidity4%>% </li>
+          </ul>
+        </div>
+
+        <div class="card5">
+          <h2>12:00</h2>
+          <img class="img-card" src=<%=img5%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp5%>°</li>
+            <li> <%=descrip5%> </li>
+            <li> <%=humidity5%>%</li>
+          </ul>
+        </div>
+
+        <div class="card6">
+          <h2>15:00</h2>
+          <img class="img-card" src=<%=img6%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp6%>°</li>
+            <li> <%=descrip6%> </li>
+            <li> <%=humidity6%>%</li>
+          </ul>
+        
+        </div>
+
+        <div class="card7">
+          <h2>18:00</h2>
+          <img class="img-card" src=<%=img7%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp7%>°</li>
+            <li> <%=descrip7%> </li>
+            <li> <%=humidity7%>%</li>
+          </ul>
+        
+        </div>
+
+        <div class="card8">
+          <h2>21:00</h2>
+          <img class="img-card" src=<%=img8%> alt="Current Weather Icon" class="weather-icon">
+          <ul class="card-details">
+            <li> <%=temp8%>°</li>
+            <li> <%=descrip8%> </li>
+            <li> <%=humidity8%>%</li>
+          </ul>
+        </div>
+  </div>
+
+
+  <footer>
+    2023 © Made by Subhadeep Bhadra
+  </footer>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
